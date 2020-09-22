@@ -25,4 +25,4 @@ The dark blue nodes represents the nodes that have been visited by the algorithm
 
 The raw algorithm without the visualization using pygames is given in the script A-star_algorithm.py, and its input matrix can be initialized in the text file input_matrix.txt. The output of this will simply show the initial 2D matrix and the solved 2D matrix with the shortest path marked with '*'.
 
-<img src='/images/raw_algorithm.JPG' width="40%">
+<img src='/images/raw_algorithm.JPG' width="25%">
