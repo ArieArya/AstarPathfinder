@@ -17,7 +17,7 @@ An example of the algorithm in action is shown below:
 
 <img src='/images/initial.JPG' width="40%">
 
-The green nodes represent the start and end nodes. Once you press space bar to start the algorithm, an optimal path will be found.
+The green nodes represent the start and end nodes. Once you press space bar to start the algorithm, the algorithm will attempt to find the shortest path between the two nodes.
 
 <img src='/images/completed.JPG' width="40%">
 
