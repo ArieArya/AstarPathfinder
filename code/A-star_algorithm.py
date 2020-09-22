@@ -151,6 +151,7 @@ def AStarMethod():
         cur_x, cur_y = findMinDistPoint(
             dist_mtx, visit_mtx, mtx_width, mtx_height)
         if counter > mtx_height * mtx_width:
+            print("no path possible")
             return "no path possible"    
 
     # trace backwards

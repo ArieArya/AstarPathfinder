@@ -170,10 +170,10 @@ def updateDistMtx(cur_x, cur_y, inp_mtx, dist_mtx, visit_mtx, gcost_mtx, mtx_wid
                 inp_mtx[cur_y-1, cur_x].set_score(str(int(dist_mtx[cur_y-1, cur_x])))
 
 
-def findMinDistPoint(dist_mtx, visit_mtx, mtx_width, mtx_height):
+def findMinDistPoint(dist_mtx, visit_mtx, mtx_width, mtx_height, cur_x, cur_y):
     min_point = float("inf")
-    next_x = 0
-    next_y = 0
+    next_x = cur_x
+    next_y = cur_y
     for i in range(mtx_width):
         for k in range(mtx_height):
             if visit_mtx[k, i] == False:
@@ -291,7 +291,7 @@ def solveAStar(draw, grid, start, end, width):
         updateDistMtx(cur_x, cur_y, inp_mtx, dist_mtx, visit_mtx,
                       gcost_mtx, mtx_width, mtx_height, end_x, end_y)
         cur_x, cur_y = findMinDistPoint(
-            dist_mtx, visit_mtx, mtx_width, mtx_height)
+            dist_mtx, visit_mtx, mtx_width, mtx_height, cur_x, cur_y)
         
         # indicates that no path exists
         if counter > mtx_height * mtx_width:
