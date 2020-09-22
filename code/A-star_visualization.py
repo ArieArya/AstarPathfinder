@@ -171,7 +171,7 @@ def updateDistMtx(cur_x, cur_y, inp_mtx, dist_mtx, visit_mtx, gcost_mtx, mtx_wid
 
 
 def findMinDistPoint(dist_mtx, visit_mtx, mtx_width, mtx_height):
-    min_point = 10000
+    min_point = float("inf")
     next_x = 0
     next_y = 0
     for i in range(mtx_width):
@@ -185,7 +185,7 @@ def findMinDistPoint(dist_mtx, visit_mtx, mtx_width, mtx_height):
 
 
 def backtrackPoint(cur_x, cur_y, coord_traversed, inp_mtx, dist_mtx, gcost_mtx, mtx_width, mtx_height):
-    min_point = 10000
+    min_point = float("inf")
     next_x = cur_x
     next_y = cur_y
     # x + 1
@@ -259,8 +259,8 @@ def solveAStar(draw, grid, start, end, width):
     gcost_mtx = np.zeros((mtx_height, mtx_width))
 
     # initialize with an infinite distance
-    dist_mtx += 10000
-    gcost_mtx += 10000
+    dist_mtx += float("inf")
+    gcost_mtx += float("inf")
 
     # store numpy visited list
     visit_mtx = np.zeros((mtx_height, mtx_width))
