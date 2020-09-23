@@ -6,7 +6,7 @@ The A-star algorithm is a graph traversal and pathfinding algorithm commonly use
 
 h(n) is the heuristic function, and estimates the distance of the current node to the goal node. In the case of a 2D matrix, a simple Euclidian distance can be used for this estimation. g(n) is simply the cost of the path from the start node to the current node. The sum of these two costs make up f(n), known as the f-cost.
 
-Typically, the A-star algorithm is implemented using a priority queue for more optimal search time (to more effectively select nodes with minimum f-costs), but due to the smaller scope of this project, such a priority queue is not used.
+Typically, the A-star algorithm is implemented using a priority queue for more optimal search time (to more effectively select nodes with minimum f-costs), but due to the smaller scope of the visualization project, such a priority queue is not used. However, the algorithm in A-star_prioqueue.py utilizes this algorithm.
 
 The rules for this algorithm are as follows:
 - From each node, you can move up, down, left, right, but not diagonally
